@@ -1,3 +1,6 @@
 auto-save-list/
 *~
 ido.last
+.emacs.desktop*
+places
+.#*
