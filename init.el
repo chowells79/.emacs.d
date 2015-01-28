@@ -14,7 +14,7 @@
 
 ;; column numbers
 (setq column-number-mode 1)
-  
+
 
 ;; enable ido-mode
 (ido-mode 1)
@@ -37,3 +37,7 @@
 
 ;; don't use tabs to indent
 (setq-default indent-tabs-mode nil)
+
+
+;; show trailing whitespace
+(setq-default show-trailing-whitespace 1)
