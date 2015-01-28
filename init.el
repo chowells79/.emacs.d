@@ -1,7 +1,3 @@
-;; to use, put the following line into .emacs, uncommented
-;;  (load-file "~/.emacs.d/init.el")
-
-
 ;; set colors
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0/")
 
