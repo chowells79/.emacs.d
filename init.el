@@ -47,3 +47,8 @@
 
 ;; show trailing whitespace
 (setq-default show-trailing-whitespace 1)
+
+
+;; desktop-save-mode
+(desktop-save-mode 1)
+(setq desktop-restore-eager 10)
