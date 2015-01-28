@@ -33,3 +33,7 @@
 
 ;; kill whole line
 (setq kill-whole-line 1)
+
+
+;; don't use tabs to indent
+(setq-default indent-tabs-mode nil)
