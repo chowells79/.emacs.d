@@ -19,3 +19,7 @@
 ;; column numbers
 (setq column-number-mode 1)
   
+
+;; enable ido-mode
+(ido-mode 1)
+
