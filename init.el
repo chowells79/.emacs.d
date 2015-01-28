@@ -29,3 +29,7 @@
      (define-key haskell-mode-map (kbd "C-,") 'haskell-move-nested-left)
      (define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
      (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)))
+
+
+;; kill whole line
+(setq kill-whole-line 1)
