@@ -26,11 +26,9 @@
                                    ;   make EMACS=/path/to/emacs
 (eval-after-load "haskell-mode"
   '(progn
-     (define-key haskell-mode-map (kbd "C-,") 'haskell-move-nested-left)
-     (define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
-     (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
      (add-hook 'haskell-mode-hook
                (lambda ()
+                 turn-on-haskell-indentation
                  (setq tab-width 8
                        haskell-indentation-layout-offset 4
                        haskell-indentation-left-offset 4
