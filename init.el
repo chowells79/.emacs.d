@@ -28,7 +28,13 @@
   '(progn
      (define-key haskell-mode-map (kbd "C-,") 'haskell-move-nested-left)
      (define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
-     (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)))
+     (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+     (add-hook 'haskell-mode-hook
+               (lambda ()
+                 (setq tab-width 8
+                       haskell-indentation-layout-offset 4
+                       haskell-indentation-left-offset 4
+                       haskell-indentation-ifte-offset 4)))))
 
 
 ;; kill whole line
