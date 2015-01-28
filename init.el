@@ -23,3 +23,13 @@
 ;; enable ido-mode
 (ido-mode 1)
 
+
+;; enable haskell-mode
+(add-to-list 'load-path "~/.emacs.d/haskell-mode/")
+(load "haskell-mode-autoloads.el") ; might need to make this file
+                                   ;   make EMACS=/path/to/emacs
+(eval-after-load "haskell-mode"
+  '(progn
+     (define-key haskell-mode-map (kbd "C-,") 'haskell-move-nested-left)
+     (define-key haskell-mode-map (kbd "C-.") 'haskell-move-nested-right)
+     (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)))
