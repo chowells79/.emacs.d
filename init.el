@@ -28,7 +28,7 @@
   '(progn
      (add-hook 'haskell-mode-hook
                (lambda ()
-                 turn-on-haskell-indentation
+                 (turn-on-haskell-indentation)
                  (setq tab-width 8
                        haskell-indentation-layout-offset 4
                        haskell-indentation-left-offset 4
