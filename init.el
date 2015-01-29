@@ -50,3 +50,7 @@
 ;; desktop-save-mode
 (desktop-save-mode 1)
 (setq desktop-restore-eager 10)
+
+
+;; remove toolbar
+(tool-bar-mode -1)
