@@ -25,18 +25,15 @@
 (load "haskell-mode-autoloads.el") ; might need to make this file
                                    ;   make EMACS=/path/to/emacs
 
-(add-to-list 'load-path "~/.emacs.d/hi2/")
-(require 'hi2)
-
 (eval-after-load "haskell-mode"
   '(progn
      (add-hook 'haskell-mode-hook
                (lambda ()
-                 (turn-on-hi2)
+                 (turn-on-haskell-indentation)
                  (setq tab-width 8
-                       hi2-layout-offset 4
-                       hi2-left-offset 4
-                       hi2-ifte-offset 4)))))
+                       haskell-indentation-layout-offset 4
+                       haskell-indentation-left-offset 4
+                       haskell-indentation-ifte-offset 4)))))
 
 
 ;; kill whole line
