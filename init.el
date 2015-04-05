@@ -55,3 +55,8 @@
 
 ;; remove toolbar
 (tool-bar-mode -1)
+
+
+;; hate the beeping.  hAAAAte
+(setq visible-bell 't)
+
