@@ -60,3 +60,8 @@
 ;; hate the beeping.  hAAAAte
 (setq visible-bell 't)
 
+
+;; rust mode
+(add-to-list 'load-path "~/.emacs.d/rust-mode")
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
