@@ -4,3 +4,4 @@ ido.last
 .emacs.desktop*
 places
 .#*
+.mc-lists.el

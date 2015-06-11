@@ -4,3 +4,6 @@
 [submodule "rust-mode"]
 	path = rust-mode
 	url = git@github.com:rust-lang/rust-mode.git
+[submodule "multiple-cursors.el"]
+	path = multiple-cursors.el
+	url = git@github.com:magnars/multiple-cursors.el.git
