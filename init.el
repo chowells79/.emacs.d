@@ -70,17 +70,18 @@
 ;; multiple-cursors
 (add-to-list 'load-path "~/.emacs.d/multiple-cursors.el")
 (require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "s-SPC")       'set-rectangular-region-anchor)
+(global-set-key (kbd "H-SPC")       'set-rectangular-region-anchor)
 
 
 ;; aquamacs tweaks
 (when (string-match "aqua" (emacs-version))
   (progn
-    (global-set-key (kbd "H-SPC")   'set-rectangular-region-anchor)
     (setq inhibit-startup-echo-area-message 't)
     (custom-set-variables '(aquamacs-save-options-on-quit nil) )
+    (setq mac-command-modifier 'hyper)
+    (osx-key-mode nil)
     (tabbar-mode 0)))
