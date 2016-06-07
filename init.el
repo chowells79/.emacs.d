@@ -77,13 +77,3 @@
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "s-SPC")       'set-rectangular-region-anchor)
 (global-set-key (kbd "H-SPC")       'set-rectangular-region-anchor)
-
-
-;; aquamacs tweaks
-(when (string-match "aqua" (emacs-version))
-  (progn
-    (setq inhibit-startup-echo-area-message 't)
-    (custom-set-variables '(aquamacs-save-options-on-quit nil) )
-    (setq mac-command-modifier 'hyper)
-    (osx-key-mode nil)
-    (tabbar-mode 0)))
