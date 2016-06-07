@@ -58,7 +58,9 @@
 
 
 ;; hate the beeping.  hAAAAte
-(setq visible-bell 't)
+(setq ring-bell-function
+      (lambda () (progn (message "*** beep ***")
+                        (sit-for 0.5))))
 
 
 ;; rust mode
