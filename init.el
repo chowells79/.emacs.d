@@ -57,10 +57,12 @@
 (tool-bar-mode -1)
 
 
-;; hate the beeping.  hAAAAte
+;; hate the beeping.  hAAAAte.  But visible-bell is broken on
+;; El Capitan.  Replace with just flashing the mode line
 (setq ring-bell-function
-      (lambda () (progn (message "*** beep ***")
-                        (sit-for 0.5))))
+      (lambda ()
+        (invert-face 'mode-line)
+        (run-with-timer 0.05 nil 'invert-face 'mode-line)))
 
 
 ;; rust mode
