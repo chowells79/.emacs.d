@@ -9,7 +9,7 @@
 
      ;; Highlight current line
      (global-hl-line-mode 1)
-     (set-face-background 'hl-line "#111100")))
+     (set-face-background 'hl-line "#202000")))
 
 
 ;; column numbers
