@@ -50,6 +50,7 @@
 
 ;; desktop-save-mode
 (desktop-save-mode 1)
+(setq desktop-load-locked-desktop 't)
 (setq desktop-restore-eager 10)
 
 
